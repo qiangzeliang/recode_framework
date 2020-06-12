@@ -1,0 +1,6 @@
+回声“＃api_test” >> README.md 
+git init 
+git add README.md 
+git commit -m“第一次提交” 
+git remote add unitest1 https://github.com/qiangzeliang/api_test.git
+git push -u unitest1 master

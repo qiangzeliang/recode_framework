@@ -1,0 +1,22 @@
+config:
+    name: testcase description
+    variables: {}
+teststeps:
+-   name: /api.php
+    request:
+        headers:
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+                (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36
+        method: GET
+        params:
+            id: '38398'
+            modelid: '1'
+            op: count
+        url: http://www.chinapeace.org.cn/api.php
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - text/html; charset=utf-8

@@ -1,0 +1,48 @@
+2020-06-08 11:31:48.272 | INFO     | httprunner.runner:test_start:371 - Start to run testcase: testcase description, TestCase ID: fc783779-d768-49ac-b8a5-bd40da01bf87
+2020-06-08 11:31:48.273 | INFO     | httprunner.runner:__run_step:220 - run step begin: /p/ggdirect >>>>>>
+2020-06-08 11:31:50.492 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://ssl08.haloapps.com/p/ggdirect
+headers  : {
+    "User-Agent": "Dalvik/2.1.0 (Linux; U; Android 5.1.1; A37f Build/LMY47V)",
+    "Accept-Encoding": "gzip",
+    "Accept": "*/*",
+    "Connection": "Keep-Alive",
+    "Content-Encoding": "gzip",
+    "Content-Length": "1473",
+    "Content-type": "application/x-www-form-urlencoded;text/plain;application/json;charset=UTF-8",
+    "Host": "ssl08.haloapps.com",
+    "HRUN-Request-ID": "HRUN-fc783779-d768-49ac-b8a5-bd40da01bf87-108274"
+}
+cookies  : {}
+body     : androidid=&cp_player_id=81d52799-5b5a-41a5-9aa0-0ee4ad6e2af7&device_id=c5677b0d9f05420d9a8b40f4852a43dc&device_info=%7B%22device_id%22%3A__%2C%22imei%22%3A%2C%22imsi%22%3A%2C%22system_os%22%3A5.1.1%3A22%2C%22product_model%22%3AA37f%2C%22phone_model%22%3AOPPO%2C%22net_status%22%3AWIFI%2C%22local_country%22%3A%2C%22resolution%3A%22720x1280%2C%22language%22%3Azh%2C%22timezone%22%3ATimeZone+GMT%2B08%3A00+Timezone+id+Asia%2FShanghai%7D&game_player_id=&original=%7B%22orderId%22%3A%22GPA.3347-8182-9211-50207%22%2C%22packageName%22%3A%22com.tapmatch.blastfever.free%22%2C%22productId%22%3A%22600215.com.tapmatch.blastfever.free.1000coins.99%22%2C%22purchaseTime%22%3A1591583849158%2C%22purchaseState%22%3A0%2C%22purchaseToken%22%3A%22loebgbbjcemdcobddbanaagg.AO-J1Oy-Et6k6MKOBFdFmqh8fzy6yPY8I5VX97J6Mi3mjG12D1rFEluX_5JG1etm0CzXQ5VA31claH7lByz8m2uCDHMkKLHAGpEtX1d5cnKOdZcgNMCaZ29NQOX3eCcwts_buy3f9JXwQvfPirUHGbyKejH2SRAzCj9nDNzo-jw5amskQqzq7vA%22%2C%22acknowledged%22%3Afalse%7D&package_name=com.tapmatch.blastfever.free&product_id=600215&product_version=3&promotion_id=&signature=UlzMENKQUanD94c0Qm6o7Cri%2FKwhEA%2F3mf7rX2vCDkDz09RAC546XJ7Sf%2F%2BGMcCsRqgP3E0Fvljp8461yxC97VVR5%2FsZQ9VEswTHCHSmz4GSQdgzHIh3Sa7ewPeWiP4tWgyc65XIzHN5atQPU9j4A25lqzkzEqFvjqzJEN4nU41ceBSeJoieVTh5fQ83gsSA84ZBpfv4dmiWnT1%2BjTNNVNdD850M5iUcl1%2FtwQvMCY1mcLrOR3ENIeOxDv8XgyPBmpN6ywaNArq%2Bb48adEqW0BGr7Deht%2B%2FFtsknOs%2BhPzXVBewZZYHXn9%2FbCX6ThO2j2LNxo9YgZieSwxHUh73uag%3D%3D&subc_id=&user_id=&vid=
+
+2020-06-08 11:31:50.493 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Cache-control": "no-cache=\"set-cookie\"",
+    "Content-Type": "text/javascript;charset=UTF-8",
+    "Date": "Mon, 08 Jun 2020 03:31:51 GMT",
+    "Server": "openresty",
+    "Set-Cookie": "AWSELB=571F198D12CBFC680D64DD8082142C23C1FD94541B860080205C33075780AA48361E8C8EBB43CA569CA1B11CA5E1D0EE7F84F3605CF097A913787D22FF821AF2D5CFF6AC8E;PATH=/;MAX-AGE=1800, AWSELBCORS=571F198D12CBFC680D64DD8082142C23C1FD94541B860080205C33075780AA48361E8C8EBB43CA569CA1B11CA5E1D0EE7F84F3605CF097A913787D22FF821AF2D5CFF6AC8E;PATH=/;MAX-AGE=1800;SECURE;SAMESITE=None",
+    "Content-Length": "39",
+    "Connection": "keep-alive"
+}
+cookies  : {
+    "AWSELB": "571F198D12CBFC680D64DD8082142C23C1FD94541B860080205C33075780AA48361E8C8EBB43CA569CA1B11CA5E1D0EE7F84F3605CF097A913787D22FF821AF2D5CFF6AC8E",
+    "AWSELBCORS": "571F198D12CBFC680D64DD8082142C23C1FD94541B860080205C33075780AA48361E8C8EBB43CA569CA1B11CA5E1D0EE7F84F3605CF097A913787D22FF821AF2D5CFF6AC8E"
+}
+encoding : UTF-8
+content_type : text/javascript;charset=UTF-8
+body     : {
+    "code": 413,
+    "message": "payload reused"
+}
+
+2020-06-08 11:31:50.494 | INFO     | httprunner.client:request:203 - status_code: 200, response_time(ms): 2217.3 ms, response_length: 39 bytes
+2020-06-08 11:31:50.494 | INFO     | httprunner.response:validate:192 - assert status_code equal 200(int)	==> pass
+2020-06-08 11:31:50.494 | INFO     | httprunner.response:validate:192 - assert headers."Content-Type" equal text/javascript;charset=UTF-8(str)	==> pass
+2020-06-08 11:31:50.495 | INFO     | httprunner.runner:__run_step:232 - run step end: /p/ggdirect <<<<<<
+

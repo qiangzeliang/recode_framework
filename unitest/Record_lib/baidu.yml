@@ -1,0 +1,241 @@
+config:
+    name: testcase description
+    variables: {}
+teststeps:
+-   name: /
+    request:
+        headers:
+            Sec-Fetch-Dest: document
+            Sec-Fetch-Mode: navigate
+            Sec-Fetch-Site: same-origin
+            Sec-Fetch-User: ?1
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+                (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36
+        method: GET
+        url: https://www.baidu.com/
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - text/html;charset=utf-8
+-   name: /-L-Xsjip0QIZ8tyhnq/v.gif
+    request:
+        headers:
+            Sec-Fetch-Dest: image
+            Sec-Fetch-Mode: no-cors
+            Sec-Fetch-Site: same-site
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+                (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36
+        method: GET
+        params:
+            _r: '0.8151735178292938'
+            curcard: '2'
+            curcardtab: ''
+            from_login: ''
+            from_reg: ''
+            glogid: '2874876543'
+            isLogin: '0'
+            logactid: '1234567890'
+            mod: superman:lib
+            opType: showpv
+            pid: '315'
+            qid: '2874876700'
+            query: ''
+            showTab: '10000'
+            sid: '31358_1442_31671_21078_31069_32046_31321_30823_31846_22159'
+            submod: index
+            super_frm: ''
+            superver: supernewplus
+            terminal: PC
+            type: '2011'
+            version: PCHome
+        url: https://sp1.baidu.com/-L-Xsjip0QIZ8tyhnq/v.gif
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - image/gif
+-   name: /-L-Ysjip0QIZ8tyhnq/v.gif
+    request:
+        headers:
+            Sec-Fetch-Dest: image
+            Sec-Fetch-Mode: no-cors
+            Sec-Fetch-Site: same-site
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+                (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36
+        method: GET
+        params:
+            _r: '0.3071006940818859'
+            curcard: '2'
+            curcardtab: ''
+            from_login: ''
+            from_reg: ''
+            glogid: '2874876543'
+            isLogin: '0'
+            m: superman:components_hotsearchShow
+            mod: superman:components
+            pagenum: '0'
+            pid: '315'
+            portrait: undefined
+            qid: '2874876700'
+            query: ''
+            showType: hotword
+            sid: '31358_1442_31671_21078_31069_32046_31321_30823_31846_22159'
+            submod: hotsearch
+            super_frm: ''
+            superver: supernewplus
+            terminal: PC
+            type: '2011'
+            utype: undefined
+            version: PCHome
+            words: '["17岁女孩举报父母逼婚错过高中","文章现身健身房撸铁表情凶狠","高年级为低年级搭爱心伞桥","法医学者质疑滴滴司机性侵直播","花4万租别墅偷邻居40瓶茅台","北京新增确诊病例为小学生家长"]'
+        url: https://sp2.baidu.com/-L-Ysjip0QIZ8tyhnq/v.gif
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - image/gif
+-   name: /sugrec
+    request:
+        headers:
+            Sec-Fetch-Dest: empty
+            Sec-Fetch-Mode: cors
+            Sec-Fetch-Site: same-origin
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+                (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36
+        method: GET
+        params:
+            csor: '0'
+            from: pc_web
+            hisdata: '[{"time":1591250928,"kw":"平安保险一般理赔几天到账"},{"time":1591255238,"kw":"protobuf
+                text是什么呢数据类型"},{"time":1591256149,"kw":"编译.proto文件"},{"time":1591779993,"kw":"rgb颜色表"},{"time":1591781037,"kw":"xlwings坐标"},{"time":1591781059,"kw":"xlwings单元格坐标法"},{"time":1591860829,"kw":"1
+                passed, 3 deselected in 43.98s"},{"time":1591862116,"kw":"0x80010108","fq":3},{"time":1591863099,"kw":"pycharm
+                运行出现"},{"time":1591863133,"kw":"pycharm 运行出现code 0x80010108","fq":2}]'
+            json: '1'
+            prod: pc_his
+            req: '2'
+            sid: '31731_1458_31326_21084_31069_31763_32046_31321_30823_31847_22160'
+        url: https://www.baidu.com/sugrec
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - text/plain; charset=UTF-8
+-   name: /8qUJcD3n0sgCo2Kml5_Y_D3/v.gif
+    request:
+        headers:
+            Sec-Fetch-Dest: image
+            Sec-Fetch-Mode: no-cors
+            Sec-Fetch-Site: same-site
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+                (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36
+        method: GET
+        params:
+            fm: behs
+            path: https://www.baidu.com/
+            pid: '201'
+            pj: www
+            qid: ffbc944000013c59
+            rsv_did: 7a97399900f739759b73a668ab1aac1c
+            rsv_sid: '31731_1458_31326_21084_31069_31763_32046_31321_30823_31847_22160'
+            t: '1591936907538'
+            tab: indexHot
+            wd: ''
+        url: https://sp1.baidu.com/8qUJcD3n0sgCo2Kml5_Y_D3/v.gif
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - image/gif
+-   name: /content-search.xml
+    request:
+        headers:
+            Sec-Fetch-Dest: empty
+            Sec-Fetch-Mode: no-cors
+            Sec-Fetch-Site: same-origin
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+                (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36
+        method: GET
+        url: https://www.baidu.com/content-search.xml
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/xml
+-   name: /passApi/js/wrapper.js
+    request:
+        headers:
+            Sec-Fetch-Dest: script
+            Sec-Fetch-Mode: no-cors
+            Sec-Fetch-Site: same-site
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+                (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36
+        method: GET
+        params:
+            _: '1591936907455'
+            cdnversion: '1591936907579'
+        url: https://passport.baidu.com/passApi/js/wrapper.js
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/x-javascript
+-   name: /home/msg/data/personalcontent
+    request:
+        headers:
+            Sec-Fetch-Dest: empty
+            Sec-Fetch-Mode: cors
+            Sec-Fetch-Site: same-origin
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+                (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36
+            X-Requested-With: XMLHttpRequest
+        method: GET
+        params:
+            _req_seqid: '2874876700'
+            asyn: '1'
+            indextype: manht
+            num: '8'
+            sid: '31358_1442_31671_21078_31069_32046_31321_30823_31846_22159'
+            t: '1591936907589'
+        url: https://www.baidu.com/home/msg/data/personalcontent
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - text/html;charset=utf-8
+-   name: /home/page/data/pageserver
+    request:
+        headers:
+            Sec-Fetch-Dest: image
+            Sec-Fetch-Mode: no-cors
+            Sec-Fetch-Site: same-origin
+            User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+                (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36
+        method: GET
+        params:
+            errno: '403'
+            url: /home/msg/data/personalcontent?num=8&indextype=manht&_req_seqid=2874876700&asyn=1&t=1591936907589&sid=31358_1442_31671_21078_31069_32046_31321_30823_31846_22159
+        url: https://www.baidu.com/home/page/data/pageserver
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - text/html;charset=utf-8
