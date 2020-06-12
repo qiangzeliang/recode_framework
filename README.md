@@ -1,0 +1,5 @@
+# recode_framework
+
+简介：主要是利用httprunner中har2case功能将har会话文件转换成yml文件。对yml文件解析。使用域名及地址即可。
+优势在于拥有了httprunner的所谓的录制功能，也能灵活的实现数据分类及业务表格的输出。在请求各种数据的时候优雅的提取使用。
+不用将请求的数据填在脚本或者表格里，也不用像httprunner转化成case.py那么臃肿。总之很优雅
